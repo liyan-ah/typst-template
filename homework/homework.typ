@@ -6,8 +6,8 @@
 #let proof = thmproof("proof", "证明")
 
 #show: config.with(
-  course-name: "算法设计与分析",
-  serial-str: "第 1 次作业",
+    course-name: "算法设计与分析",
+    serial-str: "第 1 次作业",
     author-info: [
         #grid(
             columns: (1fr, 1fr, 1fr),
@@ -21,14 +21,16 @@
                 日期：2025年3月10日
             ]
         )
-  ],
-  author-names: "Someone",
-  title-style: "simple",
-  theme-name: "simple",
+    ],
+    author-names: "Someone",
+    title-style: "simple",
+    theme-name: "simple",
     heading-numberings: (("{1}"), none, ("{3:1}"), ("{4:(1)}")),
 )
 
 #set text(lang: "zh")
+
+#outline() // 设置目录
 
 #prob(title: "1.1")[
     设A是n个不等数的数组，n>2.以比较作为基本运算，是给出一个$upright("O")(1)$时间的算法，找出A中一个既不是最大也不是最小的数.写出算法的伪码，说明该算法最坏情况下执行的比较次数。
